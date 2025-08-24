@@ -1,0 +1,85 @@
+/* עיצוב בסיסי לכל הגוף (Mobile First) */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* הגדרות כלליות של המחשבון */
+.calculator {
+    width: 100%; /* רוחב מלא במובייל */
+    max-width: 400px; /* רוחב מקסימלי במסכים גדולים */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* עיצוב מסך התצוגה */
+.calculator-screen {
+    width: 100%;
+    height: 80px;
+    background-color: #2e2e2e;
+    color: #fff;
+    text-align: right;
+    font-size: 3em;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* עיצוב כפתורי המחשבון */
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+button {
+    height: 70px;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.8em;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* עיצוב כפתורים מיוחדים */
+.operator {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #e08500;
+}
+
+.equal-sign {
+    grid-column: span 2;
+    background-color: #28a745;
+}
+
+.equal-sign:hover {
+    background-color: #218838;
+}
+
+.all-clear {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.all-clear:hover {
+    background-color: #c82333;
+}
