@@ -1,4 +1,4 @@
 # project-ai
 calculator.
 
-press on code and download the zipfile ...extract the zipfile and open the files via visual studio code
+download the calculator file double press to open 
